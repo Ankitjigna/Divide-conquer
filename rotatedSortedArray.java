@@ -1,6 +1,9 @@
 import java.util.*;
 public class rotatedSortedArray{
-    public static void Search(int arr[] ,int tar ,int si ,int ei){
+    public static int Search(int arr[] ,int tar ,int si ,int ei){
+        if (si > ei){
+            return -1;
+        }
         int mid = si+(ei-si)/2;
 
         if(arr[mid] == tar){
